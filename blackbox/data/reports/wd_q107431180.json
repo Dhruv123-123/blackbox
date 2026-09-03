@@ -1,0 +1,254 @@
+{
+  "id": "wd_q107431180",
+  "qid": "Q107431180",
+  "tier": "wikidata",
+  "depth": "full",
+  "title": "Petropavlovsk-Kamchatsky Air 251 (2021)",
+  "flight_number": "PTK251",
+  "date": "2021-07-06",
+  "agency": "MAK",
+  "agencies": [
+    {
+      "code": "MAK",
+      "name": "Interstate Aviation Committee",
+      "country": "Russia",
+      "role": "lead"
+    }
+  ],
+  "aircraft": {
+    "type": "Antonov An-26B-100",
+    "manufacturer": "Antonov",
+    "family": "An-26",
+    "registration": "RA-26085"
+  },
+  "operator": "Petropavlovsk-Kamchatsky Air Enterprise",
+  "route": {
+    "from_name": "Petropavlovsk-Kamchatsky Airport (Elizovo)",
+    "to_name": "Palana Airport"
+  },
+  "location": {
+    "name": "Palana, Coastal cliff",
+    "country": "Russia",
+    "latitude": 59.106,
+    "longitude": 159.842,
+    "lat": 59.1081,
+    "lon": 159.8467
+  },
+  "phase": "approach",
+  "occupants": 28,
+  "fatalities": 28,
+  "category": "CFIT",
+  "summary": "Flight 251 departed Petropavlovsk-Kamchatsky at 00:56 local time for Palana. The crew planned a visual approach despite ATC recommendation for instrument approach due to fog conditions (cloud base 720 m, minimum required 750 m for visual approach). The aircraft deviated significantly from the planned instrument approach scheme, descended below minimum descent height (MDH) of 450 m during poor visibility conditions without visual contact with ground references, and struck a coastal cliff at 200 m altitude. All 28 on board were killed.",
+  "probable_cause": "Crew violation of the established instrument approach procedure to Palana Airport, manifested in execution of flight with significant deviation from the established route and descent significantly below the established minimum descent height (MDH) under weather conditions excluding sustained visual contact with ground references, resulting in controlled flight into terrain. (p. 128)",
+  "factors": [
+    {
+      "id": "low_visibility",
+      "role": "latent",
+      "evidence": "Fog thickening around airport. Cloud base 720 m reported by ATC in 02:03:34 broadcast, below company minimum of 750 m for visual seaward approach. Visibility more than 10 km but partial mountainous obscuration noted. (p. 107-112)"
+    },
+    {
+      "id": "procedural_noncompliance",
+      "role": "contributing",
+      "evidence": "Crew rejected ATC recommendation at 02:14:55.9 to execute instrument approach via NDB on runway 29, instead requesting visual approach on runway 11 over sea despite weather conditions contradicting visual meteorological conditions (VMC) requirements of 750 m cloud base (p. 112). Dispatch technology did not contain procedures for ATC response to bearing deviations. (p. 113)"
+    },
+    {
+      "id": "navigation_error",
+      "role": "initiating",
+      "evidence": "After passing NDB Alfa at 02:36 on descent, aircraft deviated significantly north of planned approach path. At 02:45:07.1, bearing indicated 340 degrees versus expected position. At 02:48:08.6, bearing was 320 degrees, confirming continued northward deviation of approximately 4-5 km from approach path. Crew did not execute missed approach despite this information. (p. 120-122)"
+    },
+    {
+      "id": "descent_below_minimums",
+      "role": "initiating",
+      "evidence": "Aircraft descended below MDH of 450 m established for visual maneuvering approach. At 02:47:29, aircraft at 450-500 m; at 02:48 during left turn, altitude less than 300 m, well below safety threshold. Final impact at 200 m altitude on 260 m high coastal cliff. (p. 119-125)"
+    },
+    {
+      "id": "atc_communication_error",
+      "role": "contributing",
+      "evidence": "ATC dispatcher used outdated approach procedure nomenclature (NDB runway 29 instead of NDB-A runway 11/29), causing crew confusion about available approaches. Dispatcher misinterpreted crew intentions. At 02:39:02.9, dispatcher advised 'not recommended to descend in sea' though sea descent was part of planned approach. (p. 112-113, 115)"
+    },
+    {
+      "id": "gpws_warning_response",
+      "role": "contributing",
+      "evidence": "Aircraft equipped with GPWS (SRPBZ) with current database including Palana. Modeling showed conditions for both warning and alert existed, but no discrete command for GPWS activation recorded in flight data. Reasons: possible non-activation by crew, large position determination errors, or system failure. (p. 125-127)"
+    },
+    {
+      "id": "engine_instrument_error",
+      "role": "contributing",
+      "evidence": "Barometric altimeter overreading during final approach stage due to low pressure zone created by coastal cliff's specific airflow characteristics. Variometer overreading with unknown cause. Aircraft had variometer replaced day before this flight. (p. 125-127)"
+    },
+    {
+      "id": "cfit",
+      "role": "outcome",
+      "evidence": "At 02:49:18 with track 145-150 degrees, aircraft in controlled flight struck coastal cliff at 200 m altitude. Height of impact location 200-250 m above threshold. Aircraft destroyed; all 28 occupants (6 crew, 22 passengers) killed. Three seconds before impact, crew initiated right turn with 6 degrees bank—characteristic evasion response, but too late. (p. 125)"
+    }
+  ],
+  "chain": [
+    [
+      "low_visibility",
+      "procedural_noncompliance"
+    ],
+    [
+      "procedural_noncompliance",
+      "navigation_error"
+    ],
+    [
+      "navigation_error",
+      "descent_below_minimums"
+    ],
+    [
+      "descent_below_minimums",
+      "gpws_warning_response"
+    ],
+    [
+      "descent_below_minimums",
+      "cfit"
+    ]
+  ],
+  "events": [
+    {
+      "t": 0,
+      "clock": "00:56",
+      "phase": "takeoff",
+      "actor": "CAPT",
+      "kind": "crew_action",
+      "text": "Flight 251 departed Elizovo (Petropavlovsk-Kamchatsky) runway 34 left at 00:56 local time on course 344 degrees with 22 passengers and crew, destination Palana Airport. Aircraft at maximum takeoff weight 24,341 kg, fuel 5,200 kg.",
+      "factors": []
+    },
+    {
+      "t": 1200,
+      "clock": "01:12",
+      "phase": "climb",
+      "actor": "SYS",
+      "kind": "system",
+      "text": "Aircraft reached cruise altitude 3,950 m (flight level 130) at approximately 01:11-01:12 and maintained 330-340 km/h with autopilot engaged on pitch and roll channels. Routine flight parameters normal.",
+      "factors": []
+    },
+    {
+      "t": 5400,
+      "clock": "02:30",
+      "phase": "approach",
+      "actor": "ATC",
+      "kind": "atc",
+      "text": "Dispatcher at Palana tower provided updated weather observation: wind 260 degrees 7 m/s, visibility more than 10 km, scattered clouds 300 m, solid overcast 720 m, mountains partially obscured, fog nearby, QFE 757 mmHg. This remained below Visual Flight Rules (VFR) minimum of 750 m cloud base.",
+      "factors": [
+        "low_visibility"
+      ]
+    },
+    {
+      "t": 5760,
+      "clock": "02:36",
+      "phase": "approach",
+      "actor": "PF",
+      "kind": "crew_action",
+      "text": "Crew established contact with Palana tower at 02:36:51.5 at NDB waypoint MANUB (Manubu). Crew requested approach via NDB Alfa (runway 29) with visual maneuvering (circle-to-land) on runway 29. Dispatcher cleared visual approach (PVP) on runway 29 and confirmed wind 260 degrees 7 m/s.",
+      "factors": [
+        "procedural_noncompliance"
+      ]
+    },
+    {
+      "t": 6000,
+      "clock": "02:40",
+      "phase": "approach",
+      "actor": "PF",
+      "kind": "crew_action",
+      "text": "At 02:38:41, crew began descent from cruise altitude, reducing engine power levers (RUD) from 59 degrees to 30 degrees. Autopilot remained engaged. At 02:38:41.1 captain informed dispatcher of plan to continue on course 114 after entering visual maneuvering zone and descend to runway 29 on course 294.",
+      "factors": []
+    },
+    {
+      "t": 6460,
+      "clock": "02:47",
+      "phase": "approach",
+      "actor": "SYS",
+      "kind": "system",
+      "text": "At 02:45:07.1, crew reported 800 m altitude. Dispatcher provided bearing 340 degrees. Crew then reported descending to 600 m (contradicting approach procedure which required 600 m after third turn). Aircraft began continuous left turn at 02:47:29 at 600-650 m altitude, speed 340 km/h. Turn executed with descent rather than level as required.",
+      "factors": [
+        "navigation_error"
+      ]
+    },
+    {
+      "t": 6750,
+      "clock": "02:49",
+      "phase": "approach",
+      "actor": "ATC",
+      "kind": "atc",
+      "text": "At 02:48:08.6, dispatcher requested position (napping). After determining bearing, reported position 320 degrees at 02:48:08.6. Crew reported 9 km distance from airport. This was final radio contact. Bearing change from 340 to 320 degrees over 3 minutes indicated continued significant deviation northward from approach path, approximately 4-5 km off course. Neither crew nor ATC terminated approach.",
+      "factors": [
+        "navigation_error"
+      ]
+    },
+    {
+      "t": 6990,
+      "clock": "02:49:18",
+      "phase": "approach",
+      "actor": "ENV",
+      "kind": "outcome",
+      "text": "At 02:49:18 while on track 145-150 degrees at altitude less than 300 m (below MDH 450 m), aircraft in controlled flight struck coastal cliff 260 m high. Impact altitude approximately 200 m above threshold. Three seconds before strike, crew initiated right turn with 6-degree bank (evasion maneuver) but impact unavoidable. Aircraft destroyed; all 28 occupants killed (6 crew, 22 passengers including 1 child).",
+      "factors": [
+        "descent_below_minimums",
+        "cfit"
+      ]
+    }
+  ],
+  "cvr": [],
+  "recommendations": [
+    {
+      "id": "5.1",
+      "recipient": "Russian Aviation Authorities",
+      "text": "Disseminate accident information to all civil aviation personnel in Russia"
+    },
+    {
+      "id": "5.2",
+      "recipient": "Russian Aviation Authorities",
+      "text": "Evaluate implementation status of safety recommendations contained in intermediate accident report; implement required measures if necessary"
+    },
+    {
+      "id": "5.3",
+      "recipient": "Petropavlovsk-Kamchatsky Air",
+      "text": "Conduct additional training with flight crews on: (a) analysis of meteorological conditions and takeoff decision procedures; (b) monitoring aircraft position on approach schemes; (c) criteria for executing missed approach, go-around, or diversion to alternate; (d) characteristics of approaches in mountainous terrain including circle-to-land procedures and maintenance of minimum safe altitudes near airports; (e) operation of ground proximity warning systems (GPWS)"
+    },
+    {
+      "id": "5.4",
+      "recipient": "ATC Corporation (Госкорпорация по ОрВД)",
+      "text": "Consider supplementing ATC specialist work procedures regarding necessary actions when detecting significant aircraft deviations from established approach schemes based on radar bearing data"
+    },
+    {
+      "id": "5.5",
+      "recipient": "ATC Corporation (Госкорпорация по ОрВД)",
+      "text": "Conduct training for ATC specialists on actions to take upon detecting significant aircraft deviations from approach schemes"
+    },
+    {
+      "id": "5.6",
+      "recipient": "Palana Airport Administration",
+      "text": "Bring Aerodrome Navigation Passport (ANPA) into compliance with published Aeronautical Information Publication (AIP) Russia to ensure approach procedure nomenclature is current"
+    }
+  ],
+  "dissent": [],
+  "safety_changes": [],
+  "related": [],
+  "fdr": "wd_q107431180",
+  "sources": [
+    "https://mak-iac.org/upload/iblock/acd/zc6x2oanvrjzwe4pkfabagx0grnn5kib/report_ra-26085.pdf"
+  ],
+  "asn_id": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Petropavlovsk-Kamchatsky_Air_Flight_251_(2021)",
+  "report_links": [
+    "https://mak-iac.org/upload/iblock/acd/zc6x2oanvrjzwe4pkfabagx0grnn5kib/report_ra-26085.pdf"
+  ],
+  "interest": 14.22,
+  "curated_id": null,
+  "extraction": {
+    "method": "llm",
+    "model": "claude-haiku-4-5",
+    "confidence": "high",
+    "reviewed": false,
+    "notes": [
+      "Full report read: Sections on history of flight (p. 10-12), analysis (p. 107-127), and conclusion (p. 128) reviewed",
+      "Timeline spans 1:52 from departure to impact with 8 primary events extracted from detailed narrative",
+      "Evidence citations from page markers in text; probable cause and contributing factors directly from MAK conclusion section",
+      "All 6 recommendations transcribed from section 5 on pages 130 with specific recipient designations",
+      "Navigation error supported by bearing data at lines 5348-5479 showing 20-degree bearing change over 3 minutes indicating significant lateral deviation",
+      "GPWS non-activation detailed analysis at lines 5595-5611 with three possible causes",
+      "Meteorological minima contradictions noted between RDP paragraph 19.2.7 and operational minimums tables at section 1.18.12"
+    ]
+  }
+}

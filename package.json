@@ -1,0 +1,23 @@
+{
+  "name": "blackbox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aviation accident knowledge graph, FDR replay, cockpit audio, atlas and FlightGear export",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "pinia": "^3.0.4",
+    "three": "^0.185.1",
+    "vue": "^3.5.27"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.3",
+    "vite": "^7.3.1"
+  }
+}

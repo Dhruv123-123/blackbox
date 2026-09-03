@@ -1,0 +1,281 @@
+{
+  "id": "wd_q7887735",
+  "qid": "Q7887735",
+  "tier": "wikidata",
+  "depth": "full",
+  "title": "United Express 2415",
+  "flight_number": "UX2415",
+  "date": "1989-12-26",
+  "agency": "NTSB",
+  "agencies": [
+    {
+      "code": "NTSB",
+      "name": "National Transportation Safety Board",
+      "country": "United States",
+      "role": "lead",
+      "report_id": "AAR-91-06"
+    }
+  ],
+  "aircraft": {
+    "type": "British Aerospace BA-3101 Jetstream",
+    "manufacturer": "British Aerospace",
+    "family": "Jetstream",
+    "registration": "N410UE"
+  },
+  "operator": "United Express (NPA Inc.)",
+  "route": {
+    "from_name": "Seattle-Tacoma International Airport",
+    "to_name": "Tri-Cities Airport"
+  },
+  "location": {
+    "name": "Tri-Cities Airport approach, Pasco, Washington",
+    "country": "United States",
+    "lat": 46.271,
+    "lon": -119.111
+  },
+  "phase": "approach",
+  "occupants": 6,
+  "fatalities": 6,
+  "category": "LOC-I",
+  "summary": "United Express Flight 2415 crashed 400 feet short of runway 21R. Flightcrew decision to continue unstabilized ILS approach led to stall and loss of control. Airframe icing, improper ATC vectors, and declined de-icing services were contributing factors.",
+  "probable_cause": "The flightcrew's decision to continue an unstabilized instrument landing system approach that led to a stall, most likely of the horizontal stabilizer, and loss of control at low altitude. Contributing to the accident was the air traffic controller's improper vectors that positioned the airplane inside the outer marker while it was still well above the glideslope. Contributing to the stall and loss of control was the accumulation of airframe ice that degraded the aerodynamic performance of the airplane. (p. 53)",
+  "factors": [
+    {
+      "id": "unstable_approach",
+      "role": "initiating",
+      "evidence": "Flightcrew continued to attempt to land from an unstabilized steep approach (p. 52)"
+    },
+    {
+      "id": "airframe_icing",
+      "role": "contributing",
+      "evidence": "Airplane could have accumulated up to 1 inch of mixed rime and clear ice during descent (p. 52)"
+    },
+    {
+      "id": "deicing_inadequate",
+      "role": "latent",
+      "evidence": "Captain declined de-icing at Yakima despite offers (p. 8-9)"
+    },
+    {
+      "id": "atc_communication_error",
+      "role": "contributing",
+      "evidence": "Air traffic controller's improper vectors positioned airplane inside outer marker while above glideslope (p. 53)"
+    },
+    {
+      "id": "aerodynamic_stall",
+      "role": "outcome",
+      "evidence": "Icing certification did not account for possible tail stall at landing flap configuration (p. 52)"
+    },
+    {
+      "id": "loss_of_control_inflight",
+      "role": "outcome",
+      "evidence": "Stall led to loss of control at low altitude (p. 53)"
+    }
+  ],
+  "chain": [
+    [
+      "deicing_inadequate",
+      "airframe_icing"
+    ],
+    [
+      "airframe_icing",
+      "aerodynamic_stall"
+    ],
+    [
+      "atc_communication_error",
+      "unstable_approach"
+    ],
+    [
+      "unstable_approach",
+      "aerodynamic_stall"
+    ],
+    [
+      "aerodynamic_stall",
+      "loss_of_control_inflight"
+    ]
+  ],
+  "events": [
+    {
+      "t": -4500,
+      "clock": "20:45",
+      "phase": "ground",
+      "actor": "CAPT",
+      "kind": "crew_action",
+      "text": "Flight 2415 departed Seattle-Tacoma at 2045 PST (p. 8)",
+      "factors": []
+    },
+    {
+      "t": -720,
+      "clock": "21:48",
+      "phase": "ground",
+      "actor": "CAPT",
+      "kind": "crew_action",
+      "text": "Arrived Yakima. Station agent observed ice on wings. Agent offered de-icing but captain declined multiple times despite equipment ready (p. 8)",
+      "factors": [
+        "deicing_inadequate"
+      ]
+    },
+    {
+      "t": -680,
+      "clock": "21:53",
+      "phase": "ground",
+      "actor": "ATC",
+      "kind": "atc",
+      "text": "Yakima tower closed. Controller advised light to moderate mixed icing between 18,000 and 4,000 feet (p. 9)",
+      "factors": []
+    },
+    {
+      "t": 0,
+      "clock": "22:01",
+      "phase": "takeoff",
+      "actor": "CAPT",
+      "kind": "crew_action",
+      "text": "Departed Yakima runway 27 at 2203:56, climbed to 11,000 feet (p. 9)",
+      "factors": []
+    },
+    {
+      "t": 888,
+      "clock": "22:15",
+      "phase": "cruise",
+      "actor": "ATC",
+      "kind": "atc",
+      "text": "Seattle Center at 2215:03 cleared descent to 6,000 feet at pilots' discretion (p. 9)",
+      "factors": []
+    },
+    {
+      "t": 1027,
+      "clock": "22:17",
+      "phase": "descent",
+      "actor": "ATC",
+      "kind": "atc",
+      "text": "At 2217:45 issued descent to 3,000 feet (p. 9)",
+      "factors": []
+    },
+    {
+      "t": 1196,
+      "clock": "22:20",
+      "phase": "descent",
+      "actor": "ATC",
+      "kind": "atc",
+      "text": "Seattle Center at 2226:12 cleared straight-in ILS runway 21R approach (p. 9)",
+      "factors": [
+        "atc_communication_error"
+      ]
+    },
+    {
+      "t": 1368,
+      "clock": "22:24",
+      "phase": "approach",
+      "actor": "CAPT",
+      "kind": "crew_speech",
+      "text": "At 2228:30 reported missed approach request; at 2228:47 reported instrument flags but continued approach (p. 9-10)",
+      "factors": []
+    },
+    {
+      "t": 1505,
+      "clock": "22:26",
+      "phase": "approach",
+      "actor": "FO",
+      "kind": "crew_action",
+      "text": "At 2230:05 transmitted on short final runway 21R (p. 10)",
+      "factors": []
+    },
+    {
+      "t": 1545,
+      "clock": "22:30",
+      "phase": "approach",
+      "actor": "ATC",
+      "kind": "crew_speech",
+      "text": "Controller at 2230:50 observed airplane higher than normal, descending faster than normal rate (p. 10)",
+      "factors": [
+        "loss_of_control_inflight"
+      ]
+    },
+    {
+      "t": 1560,
+      "clock": "22:30",
+      "phase": "approach",
+      "actor": "SYS",
+      "kind": "outcome",
+      "text": "Aircraft struck ground 400 feet short of runway 21R, destroyed with all fatalities (p. 10)",
+      "factors": [
+        "loss_of_control_inflight"
+      ]
+    },
+    {
+      "t": 1590,
+      "clock": "22:35",
+      "phase": "landing",
+      "actor": "ATC",
+      "kind": "system",
+      "text": "Pasco ARFF arrived at crash site at 2234:50 (p. 10)",
+      "factors": []
+    }
+  ],
+  "cvr": [],
+  "fdr": null,
+  "recommendations": [
+    {
+      "id": "A-91-87",
+      "recipient": "FAA",
+      "text": "Amend icing certification rules to require flight tests with ice accumulated in cruise and approach flap configurations"
+    },
+    {
+      "id": "A-91-88",
+      "recipient": "FAA",
+      "text": "Review airframe icing certification data for Part 23 and 25 airplanes"
+    },
+    {
+      "id": "A-91-89",
+      "recipient": "FAA",
+      "text": "Require manufacturers to review pneumatic deice boot designs to ensure adequate pressure threshold"
+    },
+    {
+      "id": "A-91-90",
+      "recipient": "FAA",
+      "text": "Revise Advisory Circulars 20-73 and 23.1419-1 to include deice boot guidance"
+    },
+    {
+      "id": "A-91-122",
+      "recipient": "FAA",
+      "text": "Issue Operations Bulletin to verify air carriers have procedures for accumulated airframe ice removal prior to final approach"
+    },
+    {
+      "id": "A-90-133",
+      "recipient": "FAA",
+      "text": "Terminate practice of providing radar vectors to final approach when using expanded range radar display without approach gate depiction at Seattle ARTCC",
+      "status": "closed_acceptable"
+    },
+    {
+      "id": "A-90-134",
+      "recipient": "FAA",
+      "text": "Terminate practice at all ARTCCs of providing radar vectors to final approach when using expanded range radar display",
+      "status": "closed_acceptable"
+    }
+  ],
+  "dissent": [],
+  "safety_changes": [],
+  "related": [],
+  "sources": [
+    "http://libraryonline.erau.edu/online-full-text/ntsb/aircraft-accident-reports/AAR91-06.pdf"
+  ],
+  "asn_id": "19891226-0",
+  "wikipedia": "https://en.wikipedia.org/wiki/United_Express_Flight_2415",
+  "report_links": [
+    "http://libraryonline.erau.edu/online-full-text/ntsb/aircraft-accident-reports/AAR91-06.pdf"
+  ],
+  "interest": 11.65,
+  "extraction": {
+    "method": "llm",
+    "model": "claude-haiku-4-5",
+    "confidence": "high",
+    "reviewed": false,
+    "notes": [
+      "Full History of Flight with detailed timeline",
+      "All findings from Conclusions",
+      "All 7 recommendations with IDs",
+      "12 new events from report narrative"
+    ]
+  },
+  "curated_id": null,
+  "t0": "1989-12-01T22:01:56Z"
+}

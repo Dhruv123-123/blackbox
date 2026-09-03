@@ -1,0 +1,288 @@
+{
+  "id": "wd_q16974827",
+  "qid": "Q16974827",
+  "tier": "wikidata",
+  "depth": "sections",
+  "title": "Flagship Airlines 3379",
+  "flight_number": "FL3379",
+  "date": "1994-12-13",
+  "time_reference": "EST",
+  "t0": "1994-12-13T23:34:09Z",
+  "agency": "NTSB",
+  "agencies": [
+    {
+      "code": "NTSB",
+      "name": "National Transportation Safety Board",
+      "country": "United States",
+      "role": "lead"
+    }
+  ],
+  "aircraft": {
+    "type": "British Aerospace Jetstream 32",
+    "manufacturer": "British Aerospace",
+    "family": "Jetstream",
+    "registration": "N918AE"
+  },
+  "operator": "Flagship Airlines",
+  "route": {
+    "from_name": "Greensboro",
+    "to_name": "Raleigh-Durham"
+  },
+  "location": {
+    "name": "Morrisville",
+    "country": "United States",
+    "lat": 35.8347,
+    "lon": -78.8669
+  },
+  "phase": "approach",
+  "occupants": 20,
+  "fatalities": 15,
+  "damage": "destroyed",
+  "category": "LOC-I",
+  "summary": "On approach to Raleigh-Durham, the captain became distracted by a cockpit warning light and incorrectly assumed an engine had failed. He initiated a go-around but mishandled the procedure, allowing airspeed to decay until the aircraft entered a stall. Despite the first officer's attempts to push the nose down, there was insufficient altitude to recover before impact 4 miles southwest of the runway threshold.",
+  "probable_cause": "The captain's improper assumption that an engine had failed, and the captain's subsequent failure to follow approved procedures for engine failure, single-engine approach and go-around, and stall recovery.",
+  "factors": [
+    {
+      "id": "stall_misdiagnosis",
+      "role": "initiating",
+      "evidence": "The captain associated the illumination of the left engine IGN light with an engine failure (p. 73). The left engine IGN light illuminated as a result of a momentary negative torque condition when the propeller speed levers were advanced to 100 percent and the power levers were at flight idle (p. 73)."
+    },
+    {
+      "id": "procedural_noncompliance",
+      "role": "contributing",
+      "evidence": "The captain failed to follow established procedures for engine failure identification, single engine approach, single engine go-around, and stall recovery (p. 73)."
+    },
+    {
+      "id": "crm_breakdown",
+      "role": "contributing",
+      "evidence": "The flightcrew failed to manage resources adequately; specifically, the captain did not designate a pilot to ensure aircraft control, did not invite discussion of the situation, and did not brief his intended actions; and the first officer did not assert himself in a timely and effective manner and did not correct the captain's erroneous statement about engine failure (p. 73)."
+    },
+    {
+      "id": "inadequate_training",
+      "role": "latent",
+      "evidence": "AMR Eagle training did not adequately address the recognition of engine failure at low power, the aerodynamic effects of asymmetric thrust from a windmilling propeller, and high thrust on the other engine (p. 73)."
+    },
+    {
+      "id": "aerodynamic_stall",
+      "role": "outcome",
+      "evidence": "Two momentary stall warnings occurred at 18:34:05.3 as the airspeed decreased to 122 knots at approximately 1,890 feet altitude (p. 9)."
+    },
+    {
+      "id": "loss_of_control_inflight",
+      "role": "outcome",
+      "evidence": "The rate of descent increased rapidly to more than 10,000 feet per minute at 18:34:09.4 as the airplane descended through 1,775 feet with airspeed decayed to 111 knots (p. 9)."
+    },
+    {
+      "id": "cfit",
+      "role": "outcome",
+      "evidence": "The aircraft impacted terrain approximately 4 nautical miles southwest of runway SL threshold at 18:34:09.4 at an airspeed of about 179 knots and a heading of 290 degrees (p. 10)."
+    }
+  ],
+  "chain": [
+    [
+      "stall_misdiagnosis",
+      "procedural_noncompliance"
+    ],
+    [
+      "procedural_noncompliance",
+      "aerodynamic_stall"
+    ],
+    [
+      "aerodynamic_stall",
+      "loss_of_control_inflight"
+    ],
+    [
+      "loss_of_control_inflight",
+      "cfit"
+    ],
+    [
+      "crm_breakdown",
+      "aerodynamic_stall"
+    ],
+    [
+      "inadequate_training",
+      "stall_misdiagnosis"
+    ]
+  ],
+  "events": [
+    {
+      "t": -60,
+      "clock": "18:33:09",
+      "phase": "approach",
+      "actor": "ATC",
+      "text": "Tower cleared flight 3379 to land on runway 5L with wind 010 at 8 knots and 3.5 mile final (p. 9).",
+      "kind": "atc"
+    },
+    {
+      "t": -9.3,
+      "clock": "18:34:00",
+      "phase": "approach",
+      "actor": "PF",
+      "text": "Flight 3379 acknowledged cleared to land 5L, last transmission from flight (p. 9).",
+      "kind": "crew_speech"
+    },
+    {
+      "t": 0,
+      "clock": "18:34:09",
+      "phase": "approach",
+      "actor": "SYS",
+      "text": "Uninteligible noise heard on radio frequency, marking start of final crisis; aircraft at 2,100 feet during descent through 160 knots (p. 9).",
+      "state": {
+        "alt": 2100,
+        "ias": 160,
+        "hdg": 180
+      },
+      "kind": "system"
+    },
+    {
+      "t": 18.7,
+      "clock": "18:34:27.7",
+      "phase": "approach",
+      "actor": "SYS",
+      "text": "Change in engine noise similar to increase in engine RPM detected; aircraft begins to slow and drift left (p. 9).",
+      "state": {
+        "alt": 2050,
+        "ias": 150
+      },
+      "kind": "system"
+    },
+    {
+      "t": 19.3,
+      "clock": "18:34:28.3",
+      "phase": "approach",
+      "actor": "PF",
+      "text": "Captain asked 'Why is that ignition light on? We just had a flame out.' (p. 9).",
+      "kind": "crew_speech"
+    },
+    {
+      "t": 26,
+      "clock": "18:34:35",
+      "phase": "approach",
+      "actor": "PM",
+      "text": "First officer stated 'speeds high' in response to airspeed warning (p. 9).",
+      "state": {
+        "alt": 1890,
+        "ias": 140
+      },
+      "kind": "crew_speech"
+    },
+    {
+      "t": 56.3,
+      "clock": "18:35:05.3",
+      "phase": "approach",
+      "actor": "SYS",
+      "text": "Captain called 'let's go missed approach'; two momentary stall warnings occurred as captain called 'Set max power' and first officer responded 'Lower the nose, lower the nose' (p. 9).",
+      "state": {
+        "alt": 1890,
+        "ias": 122
+      },
+      "factors": [
+        "aerodynamic_stall"
+      ],
+      "kind": "system"
+    },
+    {
+      "t": 109.4,
+      "clock": "18:35:18.4",
+      "phase": "approach",
+      "actor": "SYS",
+      "text": "Stall warning horn sounded again followed by dual stall warning horns; aircraft at 1,775 feet with airspeed decayed to 111 knots; rate of descent increased rapidly to over 10,000 fpm; first officer asked 'You got it?' and captain responded 'Yeah' (p. 9).",
+      "state": {
+        "alt": 1775,
+        "ias": 111,
+        "vs": -10000
+      },
+      "factors": [
+        "loss_of_control_inflight"
+      ],
+      "kind": "system"
+    },
+    {
+      "t": 119.4,
+      "clock": "18:35:28.4",
+      "phase": "descent",
+      "actor": "SYS",
+      "text": "Aircraft impacted terrain approximately 4 nautical miles southwest of runway SL at airspeed of about 179 knots and heading of 290 degrees with normal acceleration of 2.5 G (p. 10).",
+      "state": {
+        "alt": 0,
+        "ias": 179,
+        "hdg": 290,
+        "pitch": -90
+      },
+      "factors": [
+        "cfit"
+      ],
+      "kind": "outcome"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "A-95-98",
+      "to": "FAA",
+      "text": "Establish advisory material that encourages air carriers to train flightcrews in the identification of and proper response to engine failures that occur in reduced power conditions, and in other situations that are similarly less clear than the traditional engine failure at takeoff decision speed.",
+      "status": "unknown",
+      "trigger_factors": [
+        "inadequate_training"
+      ]
+    },
+    {
+      "id": "A-95-99",
+      "to": "FAA",
+      "text": "Review the organizational structure of the FAA surveillance of AMR Eagle and its carriers with particular emphasis on the positions and responsibilities of the Focal Point Coordinator and principal inspectors, as they relate to the respective carriers.",
+      "status": "unknown"
+    },
+    {
+      "id": "A-95-117",
+      "to": "FAA",
+      "text": "Establish an advanced training program for checking pilot performance in activities that assess skills, abilities, knowledge, and judgment during training, check flights, initial operating experience, and line checks.",
+      "status": "unknown",
+      "trigger_factors": [
+        "inadequate_training"
+      ]
+    },
+    {
+      "id": "A-95-118",
+      "to": "FAA",
+      "text": "Maintain a storage and retrieval system that contains pertinent standardized information on the quality of 14 CFR Parts 121 and 135 airline pilot performance during training in activities that assess skills, abilities, knowledge, and judgment during training, check flights, initial operating experience, and line checks.",
+      "status": "unknown"
+    },
+    {
+      "id": "A-95-119",
+      "to": "FAA",
+      "text": "Require all airlines operating under 14 CFR Parts 121 and 135 to obtain information from the FAA's storage and retrieval system that contains pertinent standardized pilot training and performance information, for the purpose of evaluating applicants for pilot positions during the pilot selection and hiring process.",
+      "status": "unknown",
+      "trigger_factors": [
+        "inadequate_training"
+      ]
+    }
+  ],
+  "dissent": [],
+  "safety_changes": [],
+  "related": [],
+  "fdr": "wd_q16974827",
+  "sources": [
+    "https://libraryonline.erau.edu/online-full-text/ntsb/aircraft-accident-reports/AAR95-07.pdf"
+  ],
+  "asn_id": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Flagship_Airlines_Flight_3379",
+  "report_links": [
+    "https://libraryonline.erau.edu/online-full-text/ntsb/aircraft-accident-reports/AAR95-07.pdf",
+    "https://www.ntsb.gov/_layouts/ntsb.aviation/Results.aspx?queryId=e199e50f-87c6-4ec6-adcd-6a6b75dbd5af"
+  ],
+  "interest": 13.32,
+  "curated_id": null,
+  "extraction": {
+    "method": "llm",
+    "model": "claude-haiku-4-5",
+    "confidence": "high",
+    "reviewed": false,
+    "notes": [
+      "History of Flight section read for events (p. 8-10)",
+      "Conclusions section read for findings (p. 73-74)",
+      "Probable Cause section read for causal statement (p. 74)",
+      "Recommendations section read for all 5 recommendations (p. 75-76)",
+      "Events extracted from CVR transcript and FDR data correlation",
+      "Times in EST per report Note 1 (p. 80)"
+    ]
+  }
+}
