@@ -25,7 +25,9 @@ jobs:
         with:
           node-version: 20
           cache: npm
-      - run: npm ci
+      - run: npm ci --ignore-scripts
+        # onnxruntime-node (pulled in by transformers) downloads native binaries in its
+        # postinstall and stalls on CI; the browser bundle only uses the WASM build.
       - run: npm run build
         env:
           BASE_PATH: /${{ github.event.repository.name }}/
